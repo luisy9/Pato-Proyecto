@@ -146,6 +146,13 @@ p {
 /*
 
 /* Pagina Carta */
+
+/*Mobil Carta*/
+@media (max-with: 992px) {
+  #caca{
+    display: none;
+  }
+}
 .textoNuestraCarta {
   color: black;
   font-family: Eras Bold ITC;
@@ -160,17 +167,20 @@ p {
   padding-top: 20px;
   background-image: url("../images/mesas.jpg");
 }
+.ocultaMenu{
+  visibility: visible;
+}
 .contenedorCarta{ 
-  height: 1000px;
-  max-width: 83%;
+  height: auto;
+  width: 1000px;
   background-color: red;
   border-radius: 20px;
   opacity: 0.8;
+  visibility: visible;
 }
-.divCarta {
-  background-color: red;
-  max-width: 83%;
-  
+
+#mobilCarta{
+  visibility: hidden;
 }
 
 /*Imagnes Comida*/
@@ -183,11 +193,11 @@ p {
 /*Columnas Carta*/
 .columna {
   background-color: white;
-  opacity: 0.8;
-  width: 400px;
+  height: 500px;
   /* margin-left: 170px;  */
   padding-top: 10px;
   padding-left: 25px;
+  border-radius: 20px;
 }
 
 /*Style Botones*/
@@ -322,6 +332,11 @@ p {
 #pasteles > div > div > a > div {
   border-radius: 30px;
 }
+@media (max-with: 992px) {
+  .ocultarCarta{
+    visibility: hidden;
+  }
+}
 
 /* SECCION INTERES */
 .interes {
@@ -366,3 +381,4 @@ p {
     background-size: auto 100%;
   }
 }
+

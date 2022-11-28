@@ -3,12 +3,10 @@
         
         protected $nombrePedido;
         protected $cantidadPedido;
-        protected $precioPedido;
 
-        public function __construct($nombrePedido,$cantidadPedido,$precioPedido){
+        public function __construct($nombrePedido,$cantidadPedido){
             $this->nombrePedido = $nombrePedido;
             $this->cantidadPedido = $cantidadPedido;
-            $this->precioPedido = $precioPedido;
         }
 
         /**
@@ -43,24 +41,6 @@
         public function setCantidadPedido($cantidadPedido): self
         {
                 $this->cantidadPedido = $cantidadPedido;
-
-                return $this;
-        }
-
-        /**
-         * Get the value of precioPedido
-         */
-        public function getPrecioPedido()
-        {
-                return $this->precioPedido;
-        }
-
-        /**
-         * Set the value of precioPedido
-         */
-        public function setPrecioPedido($precioPedido): self
-        {
-                $this->precioPedido = $precioPedido;
 
                 return $this;
         }
