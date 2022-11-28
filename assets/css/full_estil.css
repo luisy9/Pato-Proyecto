@@ -1,0 +1,368 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* FONTS */
+
+p {
+  font-size: 1.2em;
+}
+
+/*COLORES*/
+
+.btn-outline-color1 {
+  color: var(--color1);
+  border: 2px solid var(--color1);
+  border-radius: 30px;
+}
+
+.btn-outline-color1:hover {
+  color: rgb(255, 255, 255);
+  background: var(--color1);
+}
+
+/*HEADER*/
+.contenedor-xxl {
+  max-width: 93%;
+}
+.navBar {
+  background-color: #ff8200;
+}
+
+.carritoImagen{
+  background-image: url("/assets/images/cesta-de-la-compra.png");
+}
+
+.h1Format {
+  font-family: Eras Bold ITC;
+  font-size: 26px;
+  color: white;
+}
+.navLetras {
+  font-family: Eras Bold ITC;
+  font-size: 21px;
+  color: white;
+}
+
+.ulNavBar {
+  padding-left: 9rem;
+}
+
+/* */
+/*FOOTER*/
+.footerStyle {
+  background-color: black;
+  height: 9rem;
+}
+
+.divFooter > a {
+  padding-left: 7%;
+  padding-right: 7%;
+}
+
+.textoFooter {
+  color: white;
+}
+
+/* INDEX.PHP */
+
+/* SECTION */
+
+/*Contenedor Pagina */
+.contenedor-xxl {
+  max-width: 93%;
+}
+
+/*Banner Principal */
+#banner_principal {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 150% auto;
+  text-align: center;
+  padding: 0;
+}
+/*Banner Style*/
+.banner {
+  color: white;
+  font-family: Eras Bold ITC;
+  padding: 7%;
+  --opacidad-negro: 0.6;
+  background-image: linear-gradient(
+    rgba(0, 0, 0, var(--opacidad-negro)),
+    rgba(0, 0, 0, var(--opacidad-negro))
+  );
+}
+
+#botonmenuprincipal {
+  border: 2px solid white;
+  background-color: #ff8200;
+  color: white;
+  font-family: Eras Bold ITC;
+  border-radius: 19px;
+  padding: 4px 13px;
+}
+
+@media (max-width: 992px) {
+  #banner_principal {
+    background-size: auto 100%;
+  }
+
+  .banner {
+    color: white;
+    font-family: Eras Bold ITC;
+    padding: 7%;
+  }
+
+  #botonmenuprincipal {
+    visibility: visible;
+    height: auto;
+    width: 100px;
+  }
+}
+/* Text Style Platos Mas Solicitados */
+.textoPlatos {
+  color: black;
+  font-family: Eras Bold ITC;
+  text-align: center;
+
+}
+/* Boton Platos Mas Solicitados */
+.botonStyle {
+  border: 0px;
+  background-color: #ff8200;
+  color: white;
+  font-family: Eras Bold ITC;
+  border-radius: 19px;
+  padding: 2px 24px;
+}
+/*Seccion Pato Gordo */
+#seccionPatoGordo {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  background-size: cover;
+  padding: 0;
+}
+/*
+
+/* Pagina Carta */
+.textoNuestraCarta {
+  color: black;
+  font-family: Eras Bold ITC;
+  text-align: center;
+}
+
+.fondoCarta {
+  text-align: center;
+  width: 100%;
+  height: auto;
+  padding: 0px;
+  padding-top: 20px;
+  background-image: url("../images/mesas.jpg");
+}
+.contenedorCarta{ 
+  height: 1000px;
+  max-width: 83%;
+  background-color: red;
+  border-radius: 20px;
+  opacity: 0.8;
+}
+.divCarta {
+  background-color: red;
+  max-width: 83%;
+  
+}
+
+/*Imagnes Comida*/
+.imagenesCarta {
+  width: 11rem;
+  height: 8rem;
+  /* margin-left: 20px; */
+}
+
+/*Columnas Carta*/
+.columna {
+  background-color: white;
+  opacity: 0.8;
+  width: 400px;
+  /* margin-left: 170px;  */
+  padding-top: 10px;
+  padding-left: 25px;
+}
+
+/*Style Botones*/
+.botonStyleCarta {
+  border: 0px;
+  background-color: #ff8200;
+  color: white;
+  font-family: Eras Bold ITC;
+  border-radius: 19px;
+  padding: 2px 24px;
+  margin-left: 30px;
+}
+
+/* .divComida {
+  background-color: green;
+  margin-left: 10rem;
+  width: auto;
+
+} */
+
+.TitleCards {
+  font-family:Eras Bold ITC;
+  font-size: 28px;
+  color: #ff8200;
+  margin-top: 7px;
+  /* margin-left: 20px; */
+}
+
+/*Titulo de cada Plato*/
+#TitlePlatos{
+  margin-top: 7px;
+  font-size: 22px;
+  /* margin-left: 20px; */
+
+}
+/*Style P*/
+.styleP {
+  text-align: left;
+  font-size: 16px;
+}
+
+/*H1 Style */
+.divTitulo {
+  /* margin-bottom: 20px; */
+}
+.textoCarta {
+  color: black;
+  font-family: Eras Bold ITC;
+  font-size: 28px;
+}
+/*Style Foto Platos*/
+.fotoCarta {
+  width: 75%;
+  height: auto;
+  border-radius: 7px 7px 7px 7px;
+}
+
+/*Style Carrito*/
+
+
+
+/*BOTONES TIENDA*/
+#botones_tienda_escritorio {
+  width: 100px;
+  text-align: right;
+}
+
+#botones_tienda_smartphone {
+  visibility: hidden;
+  text-align: right;
+  width: 90px;
+}
+
+#botones_tienda_escritorio a img {
+  width: 30px;
+}
+
+#botones_tienda_smartphone a img {
+  width: 30px;
+}
+
+@media (max-width: 992px) {
+  #botones_tienda_escritorio {
+    visibility: visible;
+    height: 0px;
+    width: 0px;
+    margin: 0;
+  }
+
+  #botones_tienda_escritorio img {
+    height: 0px;
+    width: 0px;
+    margin: 0;
+  }
+
+  #botones_tienda_smartphone {
+    visibility: visible;
+    float: right;
+  }
+}
+
+/* SECCION PASTELES */
+.divOferta {
+  margin-left: auto;
+  margin-right: auto;
+}
+/*Style Imagnes Platos Mas Solicitados */
+.fotocolumna {
+  width: 75%;
+  height: auto;
+  border-radius: 7px 7px 7px 7px;
+}
+
+.textoOfertas {
+  color: black;
+  font-family: Arial Nova;
+}
+
+#pasteles a {
+  text-decoration: none;
+}
+
+#pasteles a:hover {
+  opacity: 0.5;
+}
+
+#pasteles > hr {
+  border: 1px solid var(--color1);
+  opacity: 0.4;
+}
+
+#pasteles > div > div > a > div {
+  border-radius: 30px;
+}
+
+/* SECCION INTERES */
+.interes {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% auto;
+}
+
+.interes div.row {
+  background: RGB(255, 255, 255, 0);
+}
+
+.paddingespaciado {
+  padding-top: 10%;
+  padding-bottom: 10%;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.fotocol {
+  background: var(--color2);
+}
+
+.fotocol2 {
+  background: var(--color3);
+}
+
+@media (max-width: 992px) {
+  .fotocol {
+    background: rgba(239, 239, 239, 0.85);
+    color: rgb(0, 0, 0);
+    padding: 50px;
+  }
+
+  .fotocol2 {
+    background: rgba(255, 255, 255, 0.95);
+    color: rgb(0, 0, 0);
+    padding: 50px;
+  }
+
+  #interes {
+    background-size: auto 100%;
+  }
+}
