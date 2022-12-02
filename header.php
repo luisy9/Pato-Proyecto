@@ -1,3 +1,11 @@
+<?php
+
+  // ini_set('sesion.gc_maxlifetime',10);
+  // ini_set('sesion.cookie_lifetime',10);
+  session_start();
+  
+
+?>
 <!DOCTYPE html PUBLIC>
 <html>
   <head>
@@ -27,32 +35,26 @@
   <header>
     <nav class="navbar navbar-expand-lg navBar">
       <div class="container-xxl contenedor-xxl">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarTogglerDemo01"
-          aria-controls="navbarTogglerDemo01"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+        <button class="navbar-toggler" type="button" 
+        data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" 
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" 
+        aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <img
+          src="assets/images/patoGordo.png"
+          alt=""
+          width="100"
+          height="100"
+        />
+        <a class="navbar-brand h1Format" href="index.php"
+          >El Pato <br />Gordo</a
         >
-          <span class="navbar-toggler-icon"></span>
-      </button>
-          <img
-            src="assets/images/patoGordo.png"
-            alt=""
-            width="100"
-            height="100"
-          />
-          <a class="navbar-brand h1Format" href="index.php">El Pato <br />Gordo</a>
-
         <div id="botones_tienda_smartphone">
-          <a href="carrito.php" class="me-3"
+          <a href="#" class="me-3"
             ><img src="assets/images/iniciar_sesion.png" alt=""
           /></a>
-          <a href="carrito.php"
-            ><div class="carritoImagen"></div>
-          </a>
+          <a href="carrito.php"><img src="assets/images/cesta-de-la-compra.png" alt="" /></a>
         </div>
 
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
@@ -66,7 +68,7 @@
               <a class="nav-link navLetras" href="carta.php">Carta</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link navLetras" href="#">Contacto</a>
+              <a class="nav-link navLetras" href="contacta.php">Contacto</a>
             </li>
           </ul>
 
@@ -74,10 +76,10 @@
             id="botones_tienda_escritorio"
             class="form-inline my-2 my-lg-0 ms-auto"
           >
-            <a href="#" class="me-3"
+            <a href="iniciar_session.php" class="me-3"
               ><img src="assets/images/iniciar_sesion.png" alt=""
             /></a>
-            <a href="#"
+            <a href="carrito.php"
               ><img
                 src="assets/images/cesta-de-la-compra.png"
                 alt=""

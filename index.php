@@ -1,5 +1,5 @@
 <?php
-include("header.html");
+include("header.php");
 
 include ("Productos.php");
 include ("Patos.php");
@@ -72,6 +72,7 @@ include("listaProductos.php");
 </html>
 
 <?php
+
 include("footer.html");
 
 ?>

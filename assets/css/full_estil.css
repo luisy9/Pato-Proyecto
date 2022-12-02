@@ -28,7 +28,7 @@ p {
   background-color: #ff8200;
 }
 
-.carritoImagen{
+.carritoImagen {
   background-image: url("/assets/images/cesta-de-la-compra.png");
 }
 
@@ -124,7 +124,6 @@ p {
   color: black;
   font-family: Eras Bold ITC;
   text-align: center;
-
 }
 /* Boton Platos Mas Solicitados */
 .botonStyle {
@@ -149,9 +148,24 @@ p {
 
 /*Mobil Carta*/
 @media (max-with: 992px) {
-  #caca{
+  #botones_tienda_smartphone {
     display: none;
   }
+}
+/* .CajaMargen{
+
+} */
+.contenedor {
+  max-width: 75%;
+  margin-left: 10rem;
+}
+
+.divP {
+  width: 20px;
+  height: 25px;
+  position: relative;
+  left: 15rem;
+  bottom: 5rem;
 }
 .textoNuestraCarta {
   color: black;
@@ -167,20 +181,27 @@ p {
   padding-top: 20px;
   background-image: url("../images/mesas.jpg");
 }
-.ocultaMenu{
+.ocultaMenu {
   visibility: visible;
 }
-.contenedorCarta{ 
+
+#carta_pc{
+padding-bottom: 150px;
+}
+
+.contenedorCarta {
   height: auto;
-  width: 1000px;
-  background-color: red;
+  width: auto;
+  background-color: #ff8200;
   border-radius: 20px;
   opacity: 0.8;
   visibility: visible;
 }
 
-#mobilCarta{
-  visibility: hidden;
+.styleForm {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
 }
 
 /*Imagnes Comida*/
@@ -193,8 +214,8 @@ p {
 /*Columnas Carta*/
 .columna {
   background-color: white;
-  height: 500px;
-  /* margin-left: 170px;  */
+
+  width: 350px;
   padding-top: 10px;
   padding-left: 25px;
   border-radius: 20px;
@@ -207,19 +228,14 @@ p {
   color: white;
   font-family: Eras Bold ITC;
   border-radius: 19px;
-  padding: 2px 24px;
-  margin-left: 30px;
+  padding: 6px 26px;
+  position: relative;
+  left: 200px;
+  bottom: 5rem;
 }
 
-/* .divComida {
-  background-color: green;
-  margin-left: 10rem;
-  width: auto;
-
-} */
-
 .TitleCards {
-  font-family:Eras Bold ITC;
+  font-family: Eras Bold ITC;
   font-size: 28px;
   color: #ff8200;
   margin-top: 7px;
@@ -227,16 +243,16 @@ p {
 }
 
 /*Titulo de cada Plato*/
-#TitlePlatos{
+#TitlePlatos {
   margin-top: 7px;
   font-size: 22px;
   /* margin-left: 20px; */
-
 }
 /*Style P*/
 .styleP {
-  text-align: left;
-  font-size: 16px;
+  /* position: relative;
+ left: 15rem;
+ bottom:5rem */
 }
 
 /*H1 Style */
@@ -256,8 +272,237 @@ p {
 }
 
 /*Style Carrito*/
+/*Style Table*/
+.styleTable {
+  border: 1px solid black;
+}
+.styleTh {
+  border: 1px solid black;
+}
+
+/* Contacta */
+.sectionMesas {
+  width: auto;
+  height: 700px;
+}
+.contenedorContact {
+  background-color: #ff8200;
+  height: auto;
+  width: auto;
+  border-radius: 20px;
+  opacity: 0.8;
+  z-index: 0;
+}
+/*Contenedor Form*/
+.formStyle {
+  background-color: white;
+  border-radius: 20px;
+  width: 32rem;
+  height: 25rem;
+  z-index: 1;
+}
+.contenedorForm {
+  background-color: blue;
+  padding-top: 10px;
+  padding-left: 25px;
+  border-radius: 20px;
+}
+.contenedorLocalizacion {
+  background-color: blue;
+  padding-top: 10px;
+  padding-left: 25px;
+  border-radius: 20px;
+}
+#imagenLoca {
+  margin-left: auto;
+  margin-right: auto;
+  width: 15rem;
+  height: 17rem;
+}
+
+/*Titulo Form*/
+.h3Form {
+  font-family: Eras Bold ITC;
+  font-size: 22px;
+}
+
+/*Posicion Botones*/
+#botonContact {
+  float: left;
+}
+#botonContact1 {
+  float: right;
+}
+
+.iframe {
+  margin-left: auto;
+  margin-right: auto;
+}
+.stylePLoca {
+  font-size: 16px;
+}
+.LocalizacionStyle {
+  background-color: white;
+  border-radius: 20px;
+  width: 45rem;
+  height: 25rem;
+}
+
+/*        REGISTRARSE        */
+/*div naranja*/
+.contenedorRegi {
+  background-color: #ff8200;
+  border-radius: 20px;
+  max-width: 65rem;
+}
+
+/*Style Form Reguistrarse*/
+.formStyleCerrar {
+  background-color: white;
+  border-radius: 20px;
+  width: 30rem;
+  height: 20rem;
+  z-index: 1;
+}
+
+/* INICIAR SESSION */
+/* .h1Iniciar{
+  position: relative;
+  bottom:17rem;
+  left: 40rem;
+} */
+.contenedorIni {
+  background-color: #ff8200;
+  border-radius: 20px;
+  max-width: 65rem;
+  /* height: 20rem; */
+}
+.formStyleIni {
+  background-color: white;
+  border-radius: 20px;
+  width: 30rem;
+  height: 17rem;
+  z-index: 1;
+}
+.divImg {
+  max-width: 30rem;
+}
+.divImgIni {
+  max-height: 17rem;
+}
+.divImagenPatito {
+  width: 23rem;
+  height: 20rem;
+}
+/*Foto Pato Iniciar Session / Registrarse*/
+.patoRegi {
+  border-radius: 20px;
+  width: 15rem;
+  height: 15rem;
+}
+/*Style Botones Registrarse*/
+.botonStyleRegi {
+  border: 0px;
+  background-color: #ff8200;
+  color: white;
+  font-family: Eras Bold ITC;
+  border-radius: 19px;
+  padding: 6px 26px;
+}
+
+/*Politicas de Privacidad*/
+.contenedorPoliticas {
+  height: auto;
+  width: auto;
+  background-color: white;
+  border-radius: 20px;
+  opacity: 0.8;
+  visibility: visible;
+  margin-bottom: 10px;
+}
+.tamañoFondo {
+  height: auto;
+  width: auto;
+  padding-bottom: 5rem;
+}
+/* STYLE CARRITO */
+.contenedorCarrito {
+  background-color: #ff8200;
+  width: auto;
+  height: 40rem;
+  border-radius: 20px;
+}
+.contenedorDentroCarrito {
+  background-color: white;
+  border-radius: 20px;
+  margin-top: 32px;
+  height: 35rem;
+}
+/*Div Precio Final*/
+/* .contendorPrecioTotal{
+  width: 15rem;
+  height: 2rem;
+  border-radius: 20px;
+  background-color: #ff8200;
+} */
+.h2Total{
+  font-family: Eras Bold ITC;
+  float: left;
+}
+.contendroFinalizar{
+  background-color: white;
+  width: 30rem;
+  height: auto;
+}
+/*H1 TITULO*/
+.h1Pedido {
+  text-align: left;
+  font-family: Eras Bold ITC;
+}
+/*Style Botonoes*/
+.botonStyleCarrito {
+  border: 0px;
+  background-color: #ff8200;
+  color: white;
+  font-family: Eras Bold ITC;
+  border-radius: 19px;
+  padding: 6px 26px;
+}
+
+/*CARTA MOBIL*/
+@media screen and (max-width: 1920px) {
+  #carta_mobil {
+    display: none;
+  }
+}
 
 
+@media screen and (max-width: 992px) {
+  #carta_mobil {
+    display: block;
+  }
+  #carta_pc{
+    display: none;
+  }
+}
+/*CONTENEDOR CARTA*/
+.contenedorCartaMobil{
+  height: 2500px;
+  width: auto;
+  background-color: #ff8200;
+  border-radius: 20px;
+  opacity: 0.8;
+  visibility: visible;
+}
+/*COLUMNAS MOBIL*/
+.columnaMobil{
+  background-color: white;
+  width: 350px;
+  padding-top: 10px;
+  padding-left: 25px;
+  border-radius: 20px;
+  
+}
 
 /*BOTONES TIENDA*/
 #botones_tienda_escritorio {
@@ -332,11 +577,6 @@ p {
 #pasteles > div > div > a > div {
   border-radius: 30px;
 }
-@media (max-with: 992px) {
-  .ocultarCarta{
-    visibility: hidden;
-  }
-}
 
 /* SECCION INTERES */
 .interes {
@@ -381,4 +621,3 @@ p {
     background-size: auto 100%;
   }
 }
-

@@ -2,11 +2,13 @@
     class Pedido{
         
         protected $nombrePedido;
-        protected $cantidadPedido;
+        protected $cantidadPedido = 1;
+        protected $precioTotal;
 
-        public function __construct($nombrePedido,$cantidadPedido){
+        public function __construct($nombrePedido,$cantidadPedido,$precioUnidad){
             $this->nombrePedido = $nombrePedido;
             $this->cantidadPedido = $cantidadPedido;
+            $this->precioTotal = $precioUnidad * $cantidadPedido;
         }
 
         /**
@@ -43,6 +45,24 @@
                 $this->cantidadPedido = $cantidadPedido;
 
                 return $this;
+        }
+
+        /**
+         * Set the value of precioTotal
+         */
+        public function setPrecioTotal($precioTotal): self
+        {
+                $this->precioTotal = $precioTotal;
+
+                return $this;
+        }
+
+        /**
+         * Get the value of precioTotal
+         */
+        public function getPrecioTotal()
+        {
+                return $this->precioTotal;
         }
     }
 
