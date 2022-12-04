@@ -21,10 +21,9 @@ include("header.php");
 </head>
 
 <body>
-    <section id="" class="container-fluid sectionMesasContact" style="background-image: URL(assets/images/mesas.jpg);">
-        <h2 class="textoPlatos pt-3 pb-2">Contacta</h2>
-
-        <div id="caca" class="container-xxl contenedorContact pt-3">
+    <section id="" class="container-fluid sectionMesas" style="background-image: URL(assets/images/mesas.jpg);">
+        <h2 class="textoContact py-4">Contacta</h2>
+        <div class="container-xxl contenedorContact pt-3">
             <div class="row py-4 px-3 justify-content-between mb-3">
                 <div class="col-6 col-ms-12 py-3 px-4 mb-3 formStyle">
                     <h3 class="text-center h3Form">Formulario de Contacto</h3>
@@ -41,9 +40,9 @@ include("header.php");
                         <div class="mb-3">
                             <input type="password" class="form-control py-4" placeholder="Descripcion" id="exampleInputPassword1">
                         </div>
-                        <div class="py-4">
-                            <button type="submit" id="botonContact" class="botonStyleCarta">Aceptar</button>
-                            <button type="submit" id="botonContact1" class="botonStyleCarta">Cancelar</button>
+                        <div class="py-4 divBotones">
+                            <button type="submit" style="float:left;" class="botonStyleContacto">Aceptar</button>
+                            <button type="submit" style="float:right;" id="botonContacto1" class="botonStyleContacto">Cancelar</button>
                         </div>
                     </form>
                 </div>

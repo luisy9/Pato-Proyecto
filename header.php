@@ -51,7 +51,7 @@
           >El Pato <br />Gordo</a
         >
         <div id="botones_tienda_smartphone">
-          <a href="#" class="me-3"
+          <a href="iniciar_session.php" class="me-3"
             ><img src="assets/images/iniciar_sesion.png" alt=""
           /></a>
           <a href="carrito.php"><img src="assets/images/cesta-de-la-compra.png" alt="" /></a>
@@ -61,7 +61,7 @@
           <ul class="navbar-nav ms-auto mb-2 lg-0 mx-auto ulNavBar">
             <li class="nav-item">
               <a class="nav-link navLetras" aria-current="page" href="index.php"
-                >Menu</a
+                >Home</a
               >
             </li>
             <li class="nav-item">

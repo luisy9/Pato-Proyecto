@@ -35,27 +35,45 @@ if (isset($_COOKIE['precioTotal'])) {
 <html>
 
 <body>
-    <h1>Compra Final</h1>
-    <?php foreach ($pedidos as $pedido) { ?>
-        <div class="row">
-            <div class="col my-5 mx-4" style="text-align:left">
-                <td><?= $pedido[0] ?></td>
-            </div>
-            <div class="col my-5 " style="display:flex">
-                <?= $pedido[1] ?>
-            </div>
-            <div class="col my-5">
-                <?= $pedido[2] ?>€
-            </div>
-            <div class="col my-5">
+    <section id="carrito_pc" class="container-fluid pt-5 pb-5" style="background-image: URL(assets/images/mesas.jpg);">
+        <h1 class="text-center h1Carrito pb-5">Compra Final </h1>
+        <div id="caca" class="container-xxl contenedorCarrito py-4 px-4">
+            <div class="contenedorDentroCarritoFinal">
+                <h1 class="h1Pedido mx-4 pt-3">Tu Compra</h1>
+                <?php foreach ($pedidos as $pedido) { ?>
+                    <div class="row">
+                        <div class="col my-5 mx-4" style="text-align:left">
+                            <td><?= $pedido[0] ?></td>
+                        </div>
+                        <div class="col my-5 " style="display:flex">
+                            Cantidad: <?= $pedido[1] ?>
+                        </div>
+                        <div class="col my-5">
+                            Precio: <?= $pedido[2] ?>€
+                        </div>
+                        <div class="col my-5">
 
+                        </div>
+                    </div>
+                <?php }
+                ?>
+                 <div class="row py-3">
+                    <div class="col precioFinal mx-4">
+                        <h5 class="h2Total" style="float:left;">Total: </h5>
+                        <p  class="pPrecio" style="float:right"><?= $precio ?>€</p>
+                    </div>
+                </div>
             </div>
         </div>
-    <?php }
-    ?>
-    <h1>Precio Total</h1>
-    <div class=""><?= $precio ?>€</div>
+    </section>
 </body>
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 
 </html>
+
+<?php
+
+require_once "footer.html";
+
+
+?>

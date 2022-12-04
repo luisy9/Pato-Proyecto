@@ -26,13 +26,11 @@ include("header.php");
 </head>
 
 <body>
-    <section id="" class="container-fluid sectionMesas d-flex justify-content-center align-items-center" style="background-image: URL(assets/images/mesas.jpg);">
-        <div class="d-flex flex-column">
-            <!-- <h1 class="h1Iniciar">Iniciar Session</h1> -->
-        </div>
-        <div class="container contenedorIni d-flex flex-column">
+    <section id="" class="container-fluid sectionMesas" style="background-image: URL(assets/images/mesas.jpg);">
+        <h1 class="h1Iniciar text-center py-5">Iniciar Session</h1>
+        <div class="container contenedorIni mb-4">
             <div class="row py-4 px-3">
-                <div class="col-6 col-ms-12 py-3 formStyleIni ">
+                <div class="col-6 col-ms-12 py-3 formStyleIni">
                     <form>
                         <div class="mb-3">
                             <input type="password" class="form-control" placeholder="Correo Electronico" id="exampleInputPassword1">

@@ -26,7 +26,7 @@ require_once "header.php";
 
 <body>
     <section id="" class="container-fluid tamañoFondo" style="background-image: URL(assets/images/mesas.jpg);">
-        <h3 class="textoPlatos py-4">Politicas de Privacidad</h3>
+        <h3 class="h1Carrito text-center py-4">Politicas de Privacidad</h3>
         <div class="container-xxl contenedorPoliticas">
             <article class="px-4 py-5">
                 A través de este sitio web no se recaban datos de carácter personal de las personas usuarias sin su conocimiento, ni se ceden a terceros.
