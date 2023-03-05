@@ -1,18 +1,18 @@
 <body>
-<section id="" class="container-fluid sectionMesas" style="background-image: URL(assets/images/mesas.jpg);">
+    <section id="" class="container-fluid sectionMesas" style="background-image: URL(../assets/images/mesas.jpg);">
         <h1 class="h1Iniciar text-center py-5">Registrarse</h1>
         <div class="container contenedorRegi mb-4">
             <div class="row py-4 px-3">
                 <div class="col-6 col-ms-12 py-3 formStyleCerrar ">
-                    <form action= addUser method="POST">
+                    <form action=addUser method="POST">
                         <div class="mb-3">
-                            <input  class="form-control" name="nombre" placeholder="Nombre" id="exampleInputPassword1">
+                            <input class="form-control" name="nombre" placeholder="Nombre" id="exampleInputPassword1">
                         </div>
                         <div class="mb-3">
-                            <input  class="form-control" name="apellido" placeholder="Apellido" id="exampleInputPassword1">
+                            <input class="form-control" name="apellido" placeholder="Apellido" id="exampleInputPassword1">
                         </div>
                         <div class="mb-3">
-                            <input  class="form-control" name="correo" placeholder="Correo Electronico" id="exampleInputPassword1">
+                            <input class="form-control" name="correo" placeholder="Correo Electronico" id="exampleInputPassword1">
                         </div>
                         <div class="mb-3">
                             <input type="password" class="form-control" name="contra" placeholder="Contraseña" id="exampleInputPassword1">
@@ -66,4 +66,3 @@
                 </div>
     </section> -->
 </body>
-<script src="assets/js/bootstrap.bundle.min.js"></script>

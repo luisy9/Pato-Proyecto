@@ -12,7 +12,7 @@
                         <form method="POST" action=addPedido>
                             <input type="hidden" name="nombre" value='<?= $plato->getNombre(); ?>'>
                             <input type="hidden" name="precio" value='<?= $plato->getPrecioProducto(); ?>'>
-                            <input type="hidden" name="cantidad" value='1'>
+                            <input type="hidden" name="cantidad" value='1'> 
                             <button type="submit" class="botonStyleCarta">Añadir</button>
                         </form>
                         <div class="divP">
@@ -50,7 +50,9 @@
                         <p><?= $plato->getNombre() ?></p>
                         <img class="imagenesCarta" src=<?= $plato->getImagen() ?>>
                         <form method="POST" action=addPedido>
-                            <input type="hidden" name="producto" value='<?= $plato->getNombre() ?>'>
+                            <input type="hidden" name="nombre" value='<?= $plato->getNombre() ?>'>
+                            <input type="hidden" name="precio" value='<?= $plato->getPrecioProducto(); ?>'>
+                            <input type="hidden" name="cantidad" value='1'>
                             <button type="submit" class="botonStyleCarta">Añadir</button>
                         </form>
                         <div class="divP">
@@ -58,18 +60,6 @@
                         </div>
                     <?php }
                     ?>
-                    <!-- <?php foreach ($arrayPescados as $plato) { ?>
-                        <p><?= $plato->getNombre() ?></p>
-                        <img class="imagenesCarta" src=<?= $plato->getImagen() ?>>
-                        <form method="POST" action="carta.php">
-                            <input type="hidden" name="producto" value='<?= $plato->getNombre() ?>'>
-                            <button type="submit" class="botonStyleCarta">Añadir</button>
-                        </form>
-                        <div class="divP">
-                            <p class="styleP"><?= $plato->getPrecioProducto() ?>€</p>
-                        </div>
-                    <?php }
-                    ?> -->
                 </div>
                 <div class="col">
                 </div>
@@ -79,7 +69,9 @@
                         <p><?= $plato->getNombre() ?></p>
                         <img class="imagenesCarta" src=<?= $plato->getImagen() ?>>
                         <form method="POST" action=addPedido>
-                            <input type="hidden" name="producto" value='<?= $plato->getNombre() ?>'>
+                            <input type="hidden" name="nombre" value='<?= $plato->getNombre() ?>'>
+                            <input type="hidden" name="precio" value='<?= $plato->getPrecioProducto(); ?>'>
+                            <input type="hidden" name="cantidad" value='1'>
                             <button type="submit" class="botonStyleCarta">Añadir</button>
                         </form>
                         <div class="divP">

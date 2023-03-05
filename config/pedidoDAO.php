@@ -4,12 +4,12 @@ require_once('./controller/homeController.php');
 class pedidoDAO
 {
     static $precioTotal = 0;
-    
-    public static function addPedido($nombre_pedido, $precio_pedido, $cantidad_pedido)
+
+    public static function addPedido($nombre_pedido, $precio_pedido, $cantidad_pedido, $id_usuario)
     {
         $conec = DataBase::connect();
-        $stmt = $conec->prepare("INSERT INTO pedido (nombre_pedido, precio_pedido, cantidad_pedido) VALUES (?,?,?)");
-        $stmt->bind_param("sdi", $nombre_pedido, $precio_pedido, $cantidad_pedido);
+        $stmt = $conec->prepare("INSERT INTO pedido (nombre_pedido, precio_pedido, cantidad_pedido, id_usuario) VALUES (?,?,?,?)");
+        $stmt->bind_param("sdii", $nombre_pedido, $precio_pedido, $cantidad_pedido, $id_usuario);
         $stmt->execute();
         $conec->close();
     }
@@ -17,7 +17,7 @@ class pedidoDAO
     public static function getPedidos()
     {
         global $precioTotal;
-        $precioTotal = 0;        
+        $precioTotal = 0;
         $conec = DataBase::connect();
         $stmt = $conec->prepare("SELECT nombre_pedido, SUM(cantidad_pedido) AS cantidad_pedido, precio_pedido FROM pedido GROUP BY nombre_pedido");
         $stmt->execute();
@@ -26,16 +26,23 @@ class pedidoDAO
         $pedidos = [];
         while ($row = $result->fetch_object('Pedido')) {
             // echo $row['nombre'];
-            $precioTotal = $precioTotal + $row->getPrecioPedido()*$row->getCantidadPedido();
+            $precioTotal = $precioTotal + $row->getPrecioPedido() * $row->getCantidadPedido();
             $pedidos[] = $row;
         }
         return $pedidos;
         $conec->close();
     }
 
-    public static function sumarPedido($nombre, $precio)
+    public static function getPedidoUser()
     {
-        pedidoDAO::addPedido($nombre, $precio, 1);
+        $conec = DataBase::connect();
+        $stmt = $conec->prepare("SELECT nombre_pedido FROM pedido WHERE id_pedido= ");
+        $stmt->execute();
+    }
+
+    public static function sumarPedido($nombre, $precio, $id_usuario)
+    {
+        pedidoDAO::addPedido($nombre, $precio, 1, $id_usuario);
     }
 
     public static function restarPedido($nombre)

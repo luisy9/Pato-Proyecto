@@ -39,6 +39,9 @@ if (isset($_COOKIE['precioTotal'])) {
                         <h5 class="h2Total" style="float:left;">Total: </h5>
                         <p class="pPrecio" style="float:right"><?= pedidoDAO::getPrecioTotalPedido() ?>€</p>
                     </div>
+                    <form method="POST" action=reseñas>
+                        <button type="submit">Añadir Reseña</button>
+                    </form>
                 </div>
             </div>
         </div>
