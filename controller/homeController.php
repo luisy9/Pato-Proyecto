@@ -42,16 +42,11 @@ class homeController
     public function visualizarReseñas()
     {
         //Si hay reseñas muestras la reseña
-        session_start();
-        if (isset($_SESSION['usuario'])) {
-            require_once "./views/includes/header.php";
-            require_once "./views/visualizarReseñas.php";
-            include("./views/includes/footer.php");
-        } else {
-            require_once "./views/includes/header.php";
-            require_once "./views/iniciar_session.php";
-            include("./views/includes/footer.php");
-        }
+        require_once "./config/consultaFetchDAO.php";
+        require_once "./views/includes/header.php";
+        require_once "./views/visualizarReseñas.php";
+       
+        include("./views/includes/footer.php");
     }
 
     public function carta()
@@ -251,9 +246,18 @@ class homeController
     public function reseñas()
     {
         session_start();
-        require_once "./views/includes/header.php";
-        require_once("./views/reseñas.php");
-        require_once("./views/includes/footer.php");
+        require_once("./config/pedidoDAO.php");
+        require_once("./modelo/Pedido.php");
+        if (isset($_SESSION['usuario'])) {
+            $pedidos = pedidoDAO::getId_Pedido($_SESSION['id']);
+            require_once "./views/includes/header.php";
+            require_once("./views/reseñas.php");
+            require_once("./views/includes/footer.php");
+        } else {
+            require_once "./views/includes/header.php";
+            require_once("./views/iniciar_session.php");
+            require_once("./views/includes/footer.php");
+        }
     }
 
 
@@ -410,5 +414,20 @@ class homeController
         require_once "./views/includes/header.php";
         require_once "./views/cookies.php";
         require_once "./views/includes/footer.php";
+    }
+
+    public function consultaFetchPOST()
+    {
+        require_once "./config/consultaFetchDAO.php";
+        $datosJSON = file_get_contents('php://input');
+        $datos = json_decode($datosJSON);
+        consultaFetchDAO::addResenas($datos);
+    }
+
+    public function consultaFetchGET(){
+        require_once "./config/consultaFetchDAO.php";
+        $consultaGet = consultaFetchDAO::getResenas();
+        echo json_encode($consultaGet, JSON_UNESCAPED_UNICODE);
+        return;
     }
 }

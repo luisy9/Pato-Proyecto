@@ -12,9 +12,8 @@
                     <button type="submit">Añadir</button>
                 </form>
             </article>
-            <article class="px-4 py-4">
-            </article>
-            <article class="px-4 py-4">
+            <article id="article-resenas">
+
             </article>
         </div>
     </section>

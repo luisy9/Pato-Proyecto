@@ -14,6 +14,22 @@ class pedidoDAO
         $conec->close();
     }
 
+    public static function getId_Pedido($id_usuario)
+    {
+        $conec = DataBase::connect();
+        $stmt = $conec->prepare("SELECT id_pedido FROM Pedido WHERE id_usuario=?");
+        $stmt->bind_param("i", $id_usuario);
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $pedidos = [];
+        while ($row = mysqli_fetch_array($result)) {
+            // echo $row['nombre'];
+            $pedidos[] = $row;
+        }
+        return $pedidos;
+        $conec->close();
+    }
+
     public static function getPedidos()
     {
         global $precioTotal;
