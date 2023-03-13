@@ -885,4 +885,38 @@ input[type="radio"]:checked ~ label {
   padding: 1rem;
   margin-top: 1rem;
   border-radius: 1rem;
+  display: flex;
+}
+
+/*Div izquierda resenaña*/
+.div-izquierda-reseña {
+  height: 20rem;
+  background-color: transparent;
+  margin-right: 1rem;
+  border: 1px solid black;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.div-derecha-reseña {
+  width: 90rem;
+  background-color: antiquewhite;
+  margin-right: 1rem;
+  border: 1px solid black;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.button-mis_pedidos{
+  border: 0px;
+  background-color: #ff8200;
+  color: white;
+  font-family: Eras Bold ITC;
+  border-radius: 19px;
+  padding: 6px 26px;
+  font-size: 17px;
+}
+
+.button-mis_pedidos:hover {
+  background-color: #fff;
 }

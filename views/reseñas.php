@@ -11,12 +11,13 @@
                         <input class="form-control" name="apellidoUser" placeholder="Apellido" id="apellido-user">
                     </div>
                     <div class="pt-3 px-3">
-                        <select id="id_pedidos" name="id_pedidos">
+                        <button class="button-mis_pedidos">Mis Pedidos</button>
+                        <!-- <select id="id_pedidos" name="id_pedidos">
                             <?php foreach ($pedidos as $pedido) { ?>
                                 <option value="<?php echo $pedido["id_pedido"] ?>"><?php echo $pedido["id_pedido"] ?></option>
                             <?php }
                             ?>
-                        </select>
+                        </select> -->
                     </div>
                     <div class="pt-3 px-3">
                         <input type="email" class="form-control" name="email" placeholder="Correo Electronico" id="email">

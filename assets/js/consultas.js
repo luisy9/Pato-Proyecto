@@ -13,27 +13,52 @@ fetch("http://primerentornodeharo.com/Pato-Proyecto/home/consultaFetchGET", {
   function montarHTML(datos) {
   const articleResenas = document.getElementById("article-resenas");
   datos.forEach(element => {
-    console.log(element)
+    //Div Izquierda
+    const div_izquierda = document.createElement("div");
+    div_izquierda.className = "div-izquierda-reseña";
+    //Div Derecha
+    const div_derecha = document.createElement("div");
+    div_derecha.className = "div-derecha-reseña";
+    //Div General
     const divResena = document.createElement("div");
     divResena.className = "div-resena";
+    //
     articleResenas.append(divResena);
+    divResena.append(div_izquierda);
+    divResena.append(div_derecha);
     const p_id = document.createElement("p");
     p_id.append("Id Reseña: " + element.id_reseñas);
-    divResena.append(p_id);
+    div_izquierda.append(p_id);
     const p_nombre_apellido = document.createElement("p"); 
-    let nombre = "Nombre y Apellidos: " + element.nombre_usuario + " " + element.apellido_user;
+    let nombre = element.nombre_usuario + " " + element.apellido_user;
     p_nombre_apellido.append(nombre);
-    divResena.append(p_nombre_apellido);
-    const p_email = document.createElement("p");
-    const email = element.email;
-    p_email.append("Correo Electronico: " + email);
-    divResena.append(p_email);
-    const p_contra = document.createElement("p");
-    const contra = element.contra;
-    p_contra.append("Contraseña: " + contra);
-    divResena.append(p_contra);
+    div_izquierda.append(p_nombre_apellido);     
+
+    const estrellas = document.createElement("p");
+    const p_resena = document.createElement("p");
+    const resena = element.resena;
+    const p_cometario_ = document.createElement("p");
+    p_cometario_.className = "p-comentario";
+    p_resena.append(p_cometario_ + resena);
+    div_derecha.append(p_resena);
+    //Function addEstrellas
+    addEstrellas(data);
   });
-} 
+}
+
+function addEstrellas(data) {
+  datos.forEach(e => {
+    const estrellas = e.estrellas;
+    for(let i = 0; i < 5; i++){
+      if(i < estrellas){
+        const estrellasHTML = '<input id="radio1" type="radio" name="estrellas" value="5">';
+      }else{
+
+      }
+    }
+
+  })
+}
 
 const enviarReseña = document.getElementById("enviar-resena");
 
