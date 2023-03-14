@@ -430,4 +430,12 @@ class homeController
         echo json_encode($consultaGet, JSON_UNESCAPED_UNICODE);
         return;
     }
+
+    public function consultaFetchGETPedidos(){
+        require_once "./config/pedidoDAO.php";
+        require_once ("./modelo/Pedido.php");
+        $consultaGet = pedidoDAO::getPedidos();
+        echo json_encode($consultaGet, JSON_UNESCAPED_UNICODE);
+        return;
+    }
 }

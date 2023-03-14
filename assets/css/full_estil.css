@@ -918,5 +918,7 @@ input[type="radio"]:checked ~ label {
 }
 
 .button-mis_pedidos:hover {
+  color:#ff8200;
   background-color: #fff;
+  border: 1px solid black;
 }

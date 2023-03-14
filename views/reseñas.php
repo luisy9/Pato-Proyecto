@@ -3,6 +3,9 @@
         <h2 class="textoContact py-4">Reseñas</h2>
         <div class="div-form">
             <div class="container-form mx-4">
+                <!-- <form method="POST" action="cuenta">
+                    <button type="submit" class="button-mis_pedidos">Mis Pedidos</button>
+                </form> -->
                 <form id="enviar-resena">
                     <div class="px-3 pt-4">
                         <input class="form-control" name="nombreUser" placeholder="Nombre" id="nombre-user">
@@ -11,13 +14,12 @@
                         <input class="form-control" name="apellidoUser" placeholder="Apellido" id="apellido-user">
                     </div>
                     <div class="pt-3 px-3">
-                        <button class="button-mis_pedidos">Mis Pedidos</button>
-                        <!-- <select id="id_pedidos" name="id_pedidos">
+                        <select id="id_pedidos" name="id_pedidos">
                             <?php foreach ($pedidos as $pedido) { ?>
                                 <option value="<?php echo $pedido["id_pedido"] ?>"><?php echo $pedido["id_pedido"] ?></option>
                             <?php }
                             ?>
-                        </select> -->
+                        </select>
                     </div>
                     <div class="pt-3 px-3">
                         <input type="email" class="form-control" name="email" placeholder="Correo Electronico" id="email">
