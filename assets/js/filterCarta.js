@@ -1,28 +1,34 @@
+// agarramos el checkbox
+const checkboxes = document.querySelectorAll('input[name="check"]');
 
-
-//Agarramos los checkbox
-const platos_combi_ceckbox = document.querySelector(
-  "input[id=platos-combi]"
-).checked;
-const patos_checkbox = document.querySelector("input[id=patos]");
-const verduras_merluza_checkbox = document.querySelector("input[id=verduras");
-const postres_checkbox = document.querySelector("input[id=postres]");
-
-let platos_combinados_num = 0;
-let patos_num = 0;
-let verduras_num = 0;
-let postres_num = 0;
-
-postres_checkbox.addEventListener("change", function () {
-  postres_num = 1;
-  mostrarDivs(postres_num, platos_combi, patos, verduras_merluza, postres);
+//Para cojer cada checkbox
+checkboxes.forEach((checkbox) => {
+  checkbox.addEventListener('click', updateFilters);
 });
 
-//Funcion esconder y aparecer divs
-function mostrarDivs(postres_num) {
-  //Agarramos los divs
-  const platos_combi = document.getElementById("platos-combi");
-  const patos = document.getElementById("patos-div");
-  const verduras_merluza = document.getElementById("verdura_merluza");
-  const postres = document.getElementById("postres-div");
+//Creamos un array vacio
+let filters = [];
+
+function updateFilters() {
+  const checked = Array.from(checkboxes).filter((checkbox) => checkbox.checked);
+  const checkedValues = checked.map((checkbox) => checkbox.value);
+  filters = checkedValues;
+
+  //Llamamos a la funcion para aplicar los filtros
+  AplicamosFilters();
+}
+
+function AplicamosFilters() {
+  //Cogemos todos los divs
+  const items = document.querySelectorAll('.productos');
+
+  //Bucle para esconder o mostrar los filtros
+  items.forEach((item) => {
+    const color = item.getAttribute('data-color');
+    if (filters.length === 0 || filters.includes(color)) {
+      item.style.display = 'block';
+    } else {
+      item.style.display = 'none';
+    }
+  });
 }

@@ -3,15 +3,15 @@
     <div id="" class="container-xxl contenedorCarta">
         <form id="form_check">
             <div class="container-checkboxes">
-                <div class="div-checkbox"><input type="checkbox" name="products" class="input-checkbox" value="platos-combinados"><span>Platos Combinados</span></div>
-                <div class="div-checkbox"><input type="checkbox" name="products" id="patos" class="input-checkbox" value="patos"><span>Patos</span></div>
-                <div class="div-checkbox"><input type="checkbox" name="products" id="verduras" class="input-checkbox" value="merluza"><span>Verduras/Merluza</span></div>
-                <div class="div-checkbox"><input type="checkbox" name="products" id="postres" class="input-checkbox" value="postres"><span>Postres</span></div>
+                <div class="div-checkbox"><input type="checkbox" name="check" value="platos-combinados" class="input-checkbox"><span>Platos Combinados</span></div>
+                <div class="div-checkbox"><input type="checkbox" name="check" value="patos" class="input-checkbox"><span>Patos</span></div>
+                <div class="div-checkbox"><input type="checkbox" name="check" value="verduras" class="input-checkbox"><span>Verduras/Merluza</span></div>
+                <div class="div-checkbox"><input type="checkbox" name="check" value="postres" class="input-checkbox"><span>Postres</span></div>
             </div>
         </form>
         <div class="contenedor">
             <div class="row">
-                <div class="col-6 columna my-4" id="platos-combi">
+                <div class="col-6 columna my-4 productos" data-color="platos-combinados">
                     <h2 class="TitleCards">Platos Combinados </h2>
                     <?php foreach ($platosCarne as $plato) { ?>
                         <p id="TitlePlatos"><?= $plato->getNombre() ?></p>
@@ -30,7 +30,7 @@
                 </div>
                 <div class="col">
                 </div>
-                <div class="col-6 columna my-4" id="patos-div">
+                <div class="col-6 columna my-4 productos" data-color="patos">
                     <h2 class="TitleCards">Patos</h2>
                     <?php foreach ($arrayPatos as $plato) { ?>
                         <p><?= $plato->getNombre() ?></p>
@@ -51,7 +51,7 @@
         </div>
         <div class="contenedor">
             <div class="row align-items-center">
-                <div class="col-6 columnaMobil my-4" id="verdura_merluza">
+                <div class="col-6 columnaMobil my-4 productos" data-color="verduras">
                     <h2 class="TitleCards">Verduras/Merluza</h2>
                     <?php foreach ($arrayVerdurasPescados as $plato) { ?>
                         <p><?= $plato->getNombre() ?></p>
@@ -70,7 +70,7 @@
                 </div>
                 <div class="col">
                 </div>
-                <div class="col-6 columna my-4" id="postres-div">
+                <div class="col-6 columna my-4 productos" data-color="postres">
                     <h2 class="TitleCards">Postres</h2>
                     <?php foreach ($arrayPostres as $plato) { ?>
                         <p><?= $plato->getNombre() ?></p>
@@ -98,7 +98,7 @@
         <div class="row">
             <!-- <div class="col columnaVacia">
                 </div> -->
-            <div class="col-12 columna my-4 mx-auto">
+            <div class="col-12 columna my-4 mx-auto productos">
                 <h2 class="TitleCards">Platos Combinados </h2>
                 <?php foreach ($platosCarne as $plato) { ?>
                     <p id="TitlePlatos"><?= $plato->getNombre() ?></p>
@@ -116,7 +116,7 @@
             <!-- <div class="col">
 
                 </div> -->
-            <div class="col-12 columna my-4 mx-auto">
+            <div class="col-12 columna my-4 mx-auto productos">
                 <h2 class="TitleCards">Patos</h2>
                 <?php foreach ($arrayPatos as $plato) { ?>
                     <p><?= $plato->getNombre() ?></p>
@@ -136,7 +136,7 @@
         <div class="row align-items-center">
             <!-- <div class="col">
                 </div> -->
-            <div class="col-12 columna my-4 mx-auto">
+            <div class="col-12 columna my-4 mx-auto productos">
                 <h2 class="TitleCards">Verduras/Merluza</h2>
                 <?php foreach ($arrayVerduras as $plato) { ?>
                     <p><?= $plato->getNombre() ?></p>
@@ -165,7 +165,7 @@
             </div>
             <!-- <div class="col">
                 </div> -->
-            <div class="col-12 columna my-4 mx-auto">
+            <div class="col-12 columna my-4 mx-auto productos">
                 <h2 class="TitleCards">Postres</h2>
                 <?php foreach ($arrayPostres as $plato) { ?>
                     <p><?= $plato->getNombre() ?></p>
@@ -184,6 +184,7 @@
     </div>
 </section>
 </section>
+
 <!-- <script src="assets/js/bootstrap.bundle.min.js"></script> -->
 
 <!-- </html> -->
