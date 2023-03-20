@@ -502,7 +502,7 @@ button.botonStyleCarrito {
   height: 900px;
 }
 
-#cuenta{
+#cuenta {
   height: 900px;
 }
 /*Media Query Carrito*/
@@ -811,7 +811,7 @@ button.botonStyleCarrito {
 }
 
 /*div form*/
-.div-form{
+.div-form {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -825,7 +825,6 @@ button.botonStyleCarrito {
   border-radius: 1rem;
 }
 
-
 /* Reseñas estrellas */
 .form-estrellas {
   display: flex;
@@ -833,16 +832,25 @@ button.botonStyleCarrito {
   align-items: center;
 }
 
-
-label{ color:grey;}
-input[type = "radio"]{ display:none;}
-.clasificacion{
-  direction: rtl;/* right to left */
-  unicode-bidi: bidi-override;/* bidi de bidireccional */
+label {
+  color: grey;
 }
-label:hover{color:orange;}
-label:hover ~ label{color:orange;}
-input[type = "radio"]:checked ~ label{color:orange;}
+input[type="radio"] {
+  display: none;
+}
+.clasificacion {
+  direction: rtl; /* right to left */
+  unicode-bidi: bidi-override; /* bidi de bidireccional */
+}
+label:hover {
+  color: orange;
+}
+label:hover ~ label {
+  color: orange;
+}
+input[type="radio"]:checked ~ label {
+  color: orange;
+}
 #form {
   width: 250px;
   margin: 0 auto;
@@ -907,7 +915,13 @@ input[type="radio"]:checked ~ label {
   border-radius: 1rem;
 }
 
-.button-mis_pedidos{
+.div_general_estrellas {
+  display: flex;
+  margin-bottom: 1rem;
+  margin-top: 7px;
+}
+
+.button-mis_pedidos {
   border: 0px;
   background-color: #ff8200;
   color: white;
@@ -918,7 +932,135 @@ input[type="radio"]:checked ~ label {
 }
 
 .button-mis_pedidos:hover {
-  color:#ff8200;
+  color: #ff8200;
   background-color: #fff;
   border: 1px solid black;
 }
+
+.styleVisualizar {
+  border: 0px;
+  background-color: #ff8200;
+  color: white;
+  font-family: Eras Bold ITC;
+  border-radius: 19px;
+  padding: 6px 26px;
+  font-size: 17px;
+}
+
+.styleVisualizar:hover {
+  color: #ff8200;
+  background-color: #fff;
+  border: 1px solid black;
+}
+
+/* override styles here */
+.notie-container {
+  box-shadow: none;
+}
+
+.boton_video {
+  background-color: red;
+}
+
+.estrellas-reseña {
+  color: #ff8200;
+  margin-right: 7px;
+}
+
+.div-separacion {
+  width: 50px;
+}
+
+.botonCartaVideo {
+  border: 0px;
+  background-color: #ff8200;
+  color: white;
+  font-family: Eras Bold ITC;
+  border-radius: 19px;
+  padding: 6px 26px;
+  font-size: 17px;
+  position: relative;
+  top: 650px;
+  left: 48rem;
+  width: 100px;
+  z-index: 1;
+}
+
+.botonCartaVideo:hover {
+  color: #ff8200;
+  background-color: #fff;
+  border: 1px solid black;
+}
+
+.container-checkboxes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
+.div-checkbox{
+  padding: 1rem;
+  border: 0px;
+  background-color: white;
+  color: black;
+  font-family: Eras Bold ITC;
+  border-radius: 19px;
+  padding: 6px 26px;
+  font-size: 17px;
+  margin: 1rem;
+}
+
+span{
+  padding: 1rem;
+}
+
+.container-form-reseñas {
+  background-color: white;
+  border-radius: 1rem;
+  width: 60rem;
+}
+
+.botonStyleReseñasAceptar {
+  border: 0px;
+  background-color: #ff8200;
+  color: white;
+  font-family: Eras Bold ITC;
+  border-radius: 19px;
+  padding: 6px 26px;
+  font-size: 17px;
+}
+
+.botonStyleReseñasAceptar:hover {
+  border: 2px solid green;
+  background-color: white;
+  color: green;
+  font-family: Eras Bold ITC;
+  border-radius: 19px;
+  padding: 6px 26px;
+  font-size: 17px;
+}
+
+
+.botonStyleReseñasCancelar {
+  border: 0px;
+  background-color: #ff8200;
+  color: white;
+  font-family: Eras Bold ITC;
+  border-radius: 19px;
+  padding: 6px 26px;
+  font-size: 17px;
+}
+
+.botonStyleReseñasCancelar:hover {
+  border: 2px solid red;
+  background-color: white;
+  color: red;
+  font-family: Eras Bold ITC;
+  border-radius: 19px;
+  padding: 6px 26px;
+  font-size: 17px;
+}
+
+
+

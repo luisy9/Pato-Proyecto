@@ -1,9 +1,12 @@
 <body>
     <section id="" class="container-fluid sectionMesas" style="background-image: URL(../assets/images/mesas.jpg);">
         <h1 class="h1Iniciar text-center py-5">Video Pato Gordo</h1>
-        <div class="container  mb-4">
-            <div class="row py-4 px-3 ">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/MqpEpTCwzHA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div class="container-xxl mb-4">
+            <div class="container-xxl row py-4 px-3" id="video">
+                <form method="" action=carta>
+                    <button type="submit" id="boton_carta" style="display:none" class="botonCartaVideo">Carta</button>
+                </form>
+                <video controls id="vide_promocional" src="../assets/video/pato-video.mp4"></video>
             </div>
         </div>
         </div>

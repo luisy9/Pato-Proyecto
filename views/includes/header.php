@@ -23,6 +23,8 @@ require_once('././config/usuarioDAO.php');
   <link href="../assets/css/full_estil.css" rel="stylesheet" type="text/css" media="screen" />
 
   <meta http-equiv="refresh" content="2000" />
+
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/notie/dist/notie.min.css">
 </head>
 
 <header>
@@ -31,7 +33,7 @@ require_once('././config/usuarioDAO.php');
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <img src="../assets/images/Logo1_P2_deHaro_Luis.jpg" alt="" width="100" height="100" />
+      <img src="../assets/images/Logo1_P2_deHaro_Luis.svg" alt="" width="115" height="115" />
       <a class="navbar-brand h1Format" href="./index.php">El Pato <br />Gordo</a>
       <div id="botones_tienda_smartphone">
         <a href="iniciar_session.php" class="me-3"><img src="../assets/images/iniciar_sesion.png" alt="" /></a>

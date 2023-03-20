@@ -24,7 +24,7 @@
                     </form>
                 </div>
                 <div class="col-12 col-sm-6 divImgIni">
-                    <img height="300" width="330" class="rounded mx-auto d-block" src="assets/images/patoGordo.png">
+                    <img height="300" width="330" class="rounded mx-auto d-block" src="../assets/images/Logo1_P2_deHaro_Luis.svg">
 
                 </div>
             </div>

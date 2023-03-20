@@ -54,5 +54,9 @@
 
 <script src="../assets/js/bootstrap.bundle.min.js"></script>
 <script src="../assets/js/consultas.js"></script>
-
+<script src="../assets/js/videoButton.js"></script>
+<script src="../assets/js/filterCarta.js"></script>
+<script src="../assets/js/ordenarAsceDesce.js"></script>
+<!-- Bottom of body -->
+<script src="https://unpkg.com/notie"></script>
 </html>

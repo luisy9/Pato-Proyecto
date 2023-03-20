@@ -421,7 +421,9 @@ class homeController
         require_once "./config/consultaFetchDAO.php";
         $datosJSON = file_get_contents('php://input');
         $datos = json_decode($datosJSON);
-        consultaFetchDAO::addResenas($datos);
+        $_check_pedido = consultaFetchDAO::check_id_pedido($datos);
+        $getPost = consultaFetchDAO::addResenas($datos,$_check_pedido);
+        echo json_encode($getPost, JSON_UNESCAPED_UNICODE);
     }
 
     public function consultaFetchGET(){
@@ -437,5 +439,11 @@ class homeController
         $consultaGet = pedidoDAO::getPedidos();
         echo json_encode($consultaGet, JSON_UNESCAPED_UNICODE);
         return;
+    }
+
+    public function getAscen_Desce () {
+        require_once "./config/consultaFetchDAO.php";
+        $consultaGetAsce = consultaFetchDAO::getAcendente();
+        echo json_encode($consultaGetAsce, JSON_UNESCAPED_UNICODE);
     }
 }

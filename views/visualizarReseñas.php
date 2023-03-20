@@ -9,11 +9,26 @@
                     <ul>2.Realizar un pedido en el Pato Gordo</ul>
                 </li>
                 <form method="POST" action=reseñas>
-                    <button type="submit">Añadir</button>
+                    <button class="styleVisualizar" type="submit">Añadir</button>
                 </form>
             </article>
-            <article id="article-resenas">
 
+            <div class="div-checkbox"><input type="checkbox" value="1" id="ascendete" class="input-checkbox"><span>Ascendente</span></div>
+            <div class="div-checkbox"><input type="checkbox" value="2" id="descendente" class="input-checkbox"><span>Descendente</span></div>
+
+            <!-- <form id="boton_desce">
+                <button class="" id="">Descendente</button>
+            </form>
+
+            <form id="boton_asce">
+                <button class="" id="">Ascendente</button>
+            </form> -->
+            <article id="article-resenas">
+                <!-- <button type="" class="">Descendente</button>  -->
+            </article>
+            <article id="article-resenas-asce">
+            </article>
+            <article id="article-resenas-desce">
             </article>
         </div>
     </section>
