@@ -13,7 +13,7 @@
                 </form>
             </article>
 
-            <<div class="" style="display:flex; justify-content:center;">
+            <div class="" style="display:flex; justify-content:center;">
             <div class="div-checkbox" style="width:20rem;"><input type="checkbox" value="1" id="ascendete" class="input-checkbox"><span>Ascendente</span></div>
             <div class="div-checkbox" style="width:20rem;"><input type="checkbox" value="2" id="descendente" class="input-checkbox"><span>Descendente</span></div>
 			</div>
