@@ -318,6 +318,7 @@ class homeController
     {
         require_once("./config/pedidoDAO.php");
         session_start();
+        echo $_SESSION['usuario'];
         if (isset($_SESSION['id'])) {
             pedidoDAO::sumarPedido($_POST['nombre'], $_POST['precio'], $_SESSION['id']);
             header("Location: carrito");

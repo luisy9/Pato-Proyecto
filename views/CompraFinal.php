@@ -34,14 +34,16 @@ if (isset($_COOKIE['precioTotal'])) {
                     </div>
                 <?php }
                 ?>
-                <div class="row py-3">
-                    <div class="col precioFinal mx-4">
+                <div class="div-precio-reseña">
+                    <div class="col precioFinal mx-4 mb-3 px-2">
                         <h5 class="h2Total" style="float:left;">Total: </h5>
                         <p class="pPrecio" style="float:right"><?= pedidoDAO::getPrecioTotalPedido() ?>€</p>
                     </div>
-                    <form method="POST" action=reseñas>
-                        <button type="submit">Añadir Reseña</button>
-                    </form>
+                    <div class="">
+                        <form method="POST" action=reseñas>
+                            <button class="styleVisualizar" type="submit">Añadir Reseña</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
