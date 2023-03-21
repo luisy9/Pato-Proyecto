@@ -13,8 +13,10 @@
                 </form>
             </article>
 
-            <div class="div-checkbox"><div class=""><input type="checkbox" value="1" id="ascendete" class="input-checkbox">Ascendentes</div></div>
-            <div class="div-checkbox"><input type="checkbox" value="2" id="descendente" class="input-checkbox"><span>Descendente</span></div>
+            <<div class="" style="display:flex; justify-content:center;">
+            <div class="div-checkbox" style="width:20rem;"><input type="checkbox" value="1" id="ascendete" class="input-checkbox"><span>Ascendente</span></div>
+            <div class="div-checkbox" style="width:20rem;"><input type="checkbox" value="2" id="descendente" class="input-checkbox"><span>Descendente</span></div>
+			</div>
 
             <!-- <form id="boton_desce">
                 <button class="" id="">Descendente</button>
